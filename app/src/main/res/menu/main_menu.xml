@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/add_task"
+        android:orderInCategory="1"
+        android:title="Add Task"/>
+    <item
+        android:id="@+id/select_task"
+        android:orderInCategory="2"
+        android:title="Select Task"/>
+    <item
+        android:id="@+id/delete_select_task"
+        android:orderInCategory="3"
+        android:title="Delete Select Task"/>
+    <item
+        android:id="@+id/delete_all_done_task"
+        android:orderInCategory="4"
+        android:title="Delete all done task"/>
+    <item
+        android:id="@+id/go_to_folder"
+        android:orderInCategory="5"
+        android:title="Go to folder"/>
+    <item
+        android:id="@+id/deleted"
+        android:orderInCategory="6"
+        android:title="Deleted tasks"/>
+    <item
+        android:id="@+id/settings"
+        android:orderInCategory="7"
+        android:title="Settings"/>
+</menu>
