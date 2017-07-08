@@ -8,17 +8,41 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.ArrayAdapter;
 import android.widget.EditText;
+import android.widget.ListView;
+import android.widget.SimpleAdapter;
 import android.widget.TextView;
 
-public class MainActivity extends AppCompatActivity {
+import java.util.ArrayList;
+import java.util.HashMap;
 
-    private static final String TAG = "MainActivity";
+public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        TextView folder_name = (TextView)findViewById(R.id.folder_name);
+        folder_name.setText("oprtey");
+
+        ListView list_todo = (ListView) findViewById(R.id.list_todo);
+
+        ArrayList<HashMap<String, String>> myList = new  ArrayList<HashMap<String, String>>();
+        HashMap<String, String> tmp = new HashMap<String, String>();
+
+        tmp.put("task", "Task1");
+        tmp.put("status", "Status1");
+        myList.add(tmp);
+        tmp = new HashMap<String, String>();
+        tmp.put("task", "Task2");
+        tmp.put("status", "Status2");
+        myList.add(tmp);
+
+        SimpleAdapter adapter = new SimpleAdapter(this, myList, R.layout.my_list_item, new String[] {"task", "status"}, new int[] {R.id.task, R.id.task_status });
+
+        list_todo.setAdapter(adapter);
     }
 
     @Override
@@ -28,19 +52,16 @@ public class MainActivity extends AppCompatActivity {
         return true;
     }
 
-
-
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         int id = item.getItemId();
-        TextView headerView = (TextView) findViewById(R.id.header);
         switch(id){
             case R.id.add_task :
                 Intent intent = new Intent(MainActivity.this, NewTaskActivity.class);
                 startActivity(intent);
                 return true;
             case R.id.select_task:
-                headerView.setText("Выбрать задачи");
+
 
                 return true;
             case R.id.delete_select_task:
@@ -50,13 +71,13 @@ public class MainActivity extends AppCompatActivity {
 
                 return true;
             case R.id.delete_all_done_task:
-                headerView.setText("Удалить все выполненные задачи");
+
                 return true;
             case R.id.go_to_folder:
-                headerView.setText("К папкам");
+
                 return true;
             case R.id.settings:
-                headerView.setText("Настройки");
+
                 return true;
         }
         return super.onOptionsItemSelected(item);

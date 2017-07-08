@@ -18,17 +18,21 @@
 
     <string name="note">Примечание</string>
     <string name="priority">Приоритет</string>
-    <string name="priority1">отсутствует</string>
-    <string name="priority2">срочно, важно</string>
-    <string name="priority3">срочно, не важно</string>
-    <string name="priority4">важно, не срочно</string>
-    <string name="priority5">не важно, не срочно</string>
     <string name="folder">Папка</string>
-    <string name="date">Срок</string>
-    <string name="time">Время</string>
+    <string name="date">Срок\n</string>
+    <string name="time">Время\n</string>
     <string name="reminder">Напоминание</string>
     <string name="done">Готово</string>
     <string name="delete">Удалить</string>
+    <string name="cancel">Закрыть</string>
+
+    <string-array name="priority">
+        <item>отсутствует</item>
+        <item>срочно, важно</item>
+        <item>срочно, не важно</item>
+        <item>важно, не срочно</item>
+        <item>не важно, не срочно</item>
+    </string-array>
 
 
     <string name="add_folder">Добавить папкн</string>
