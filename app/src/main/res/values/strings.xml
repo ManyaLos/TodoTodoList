@@ -1,3 +1,47 @@
 <resources>
     <string name="app_name">TodoTodoList</string>
+
+    <string name="add_task">Добавить задачу</string>
+    <string name="select_task">Выбрать задачи</string>
+    <string name="delete_select_task">Удалить выбранные задачи</string>
+    <string name="delete_all_done_task">Удалить все выполненные задачи</string>
+    <string name="go_to_folder">К папкам</string>
+    <string name="deleted_task">Недавно удаленные задачи</string>
+    <string name="settings">Настройки</string>
+
+    <string name="new_task">Новая задача</string>
+    <string name="new_folder">Новая папка</string>
+    <string name="folders">Папки</string>
+    <string name="for_today">На сегодня</string>
+
+    <string name="status">Статус: </string>
+
+    <string name="note">Примечание</string>
+    <string name="priority">Приоритет</string>
+    <string name="priority1">отсутствует</string>
+    <string name="priority2">срочно, важно</string>
+    <string name="priority3">срочно, не важно</string>
+    <string name="priority4">важно, не срочно</string>
+    <string name="priority5">не важно, не срочно</string>
+    <string name="folder">Папка</string>
+    <string name="date">Срок</string>
+    <string name="time">Время</string>
+    <string name="reminder">Напоминание</string>
+    <string name="done">Готово</string>
+    <string name="delete">Удалить</string>
+
+
+    <string name="add_folder">Добавить папкн</string>
+    <string name="select_folders">Выбрать папки</string>
+    <string name="delete_select_folders">Удалить выбранные папки</string>
+    <string name="delete_empty_folders">Удалить пустые папки</string>
+
+    <string name="font_size">Размер шрифта</string>
+    <string name="animation">Анимация</string>
+    <string name="sort">Сортировка задач</string>
+    <string name="not_sort">не сортировать</string>
+    <string name="by_name">по имени</string>
+    <string name="by_priority">по приоритетеу</string>
+    <string name="by_date">по сроку</string>
+
 </resources>

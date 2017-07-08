@@ -11,8 +11,6 @@ import android.view.MenuItem;
 import android.widget.EditText;
 import android.widget.TextView;
 
-import static com.los.manya.todotodolist.R.layout.item_todo;
-
 public class MainActivity extends AppCompatActivity {
 
     private static final String TAG = "MainActivity";
