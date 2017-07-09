@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/add_folder"
+        android:orderInCategory="1"
+        android:title="@string/add_folder"/>
+    <item
+        android:id="@+id/select_folders"
+        android:orderInCategory="2"
+        android:title="@string/select_folders"/>
+    <item
+        android:id="@+id/delete_select_folders"
+        android:orderInCategory="3"
+        android:title="@string/delete_select_folders"/>
+    <item
+        android:id="@+id/delete_all_empty_folders"
+        android:orderInCategory="4"
+        android:title="@string/delete_empty_folders"/>
+    <item
+        android:id="@+id/settings"
+        android:orderInCategory="5"
+        android:title="@string/settings"/>
+</menu>
