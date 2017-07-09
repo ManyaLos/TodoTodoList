@@ -34,8 +34,13 @@
         <item>не важно, не срочно</item>
     </string-array>
 
+    <string-array name="folder">
+        <item>на сегодня</item>
+    </string-array>
 
     <string name="add_folder">Добавить папку</string>
+    <string name="folder_add">Готово</string>
+    <string name="folder_cancel">Закрыть</string>
     <string name="select_folders">Выбрать папки</string>
     <string name="delete_select_folders">Удалить выбранные папки</string>
     <string name="delete_empty_folders">Удалить пустые папки</string>
@@ -43,9 +48,19 @@
     <string name="font_size">Размер шрифта</string>
     <string name="animation">Анимация</string>
     <string name="sort">Сортировка задач</string>
-    <string name="not_sort">не сортировать</string>
-    <string name="by_name">по имени</string>
-    <string name="by_priority">по приоритетеу</string>
-    <string name="by_date">по сроку</string>
 
+    <string-array name="font_size">
+        <item>маленький</item>
+        <item>средний</item>
+        <item>большой</item>
+    </string-array>
+
+    <string-array name="sort">
+        <item>не сортировать</item>
+        <item>по имени</item>
+        <item>по приоритетеу</item>
+        <item>по сроку</item>
+    </string-array>
+
+    <string name="delete_all_task">Удалить все задачи</string>
 </resources>

@@ -15,7 +15,7 @@ public class NewTaskActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_new_task);
 
-        TextView textView = (TextView) findViewById(R.id.new_task);
+        setTitle(R.string.new_task);
 
         final Spinner priority_spinner = (Spinner) findViewById(R.id.priority_spinner);
 
@@ -23,6 +23,13 @@ public class NewTaskActivity extends AppCompatActivity {
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
 
         priority_spinner.setAdapter(adapter);
+
+        final Spinner folder_spinner = (Spinner) findViewById(R.id.folder_spinner);
+
+        ArrayAdapter<?> folder_adapter = ArrayAdapter.createFromResource(this, R.array.folder, android.R.layout.simple_spinner_item);
+        folder_adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+
+        folder_spinner.setAdapter(folder_adapter);
     }
 
     public void onClick(View view){

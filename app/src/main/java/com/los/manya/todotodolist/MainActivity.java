@@ -1,15 +1,10 @@
 package com.los.manya.todotodolist;
 
-import android.content.DialogInterface;
 import android.content.Intent;
-import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.widget.ArrayAdapter;
-import android.widget.EditText;
 import android.widget.ListView;
 import android.widget.SimpleAdapter;
 import android.widget.TextView;
@@ -24,8 +19,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        TextView folder_name = (TextView)findViewById(R.id.folder_name);
-        folder_name.setText("oprtey");
+        setTitle("folder name");
 
         ListView list_todo = (ListView) findViewById(R.id.list_todo);
 
@@ -54,21 +48,23 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
+        ListView choiceList = (ListView)findViewById(R.id.list_todo);
         int id = item.getItemId();
+
         switch(id){
             case R.id.add_task :
                 Intent intent = new Intent(MainActivity.this, NewTaskActivity.class);
                 startActivity(intent);
                 return true;
             case R.id.select_task:
-
-
+                choiceList.setChoiceMode(ListView.CHOICE_MODE_MULTIPLE);
                 return true;
             case R.id.delete_select_task:
 
                 return true;
             case R.id.deleted:
-
+                Intent intent2 = new Intent(MainActivity.this, DeletedTaskActivity.class);
+                startActivity(intent2);
                 return true;
             case R.id.delete_all_done_task:
 
@@ -78,7 +74,8 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent4);
                 return true;
             case R.id.settings:
-
+                Intent intent5 = new Intent(MainActivity.this, SettingsActivity.class);
+                startActivity(intent5);
                 return true;
         }
         return super.onOptionsItemSelected(item);

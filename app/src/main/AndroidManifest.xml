@@ -19,7 +19,9 @@
         <activity android:name=".NewTaskActivity" />
         <activity android:name=".DateActivity" />
         <activity android:name=".TimeActivity" />
-        <activity android:name=".FoldersActivity"></activity>
+        <activity android:name=".FoldersActivity" />
+        <activity android:name=".SettingsActivity" />
+        <activity android:name=".DeletedTaskActivity"></activity>
     </application>
 
 </manifest>
