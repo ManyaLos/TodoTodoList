@@ -74,7 +74,8 @@ public class MainActivity extends AppCompatActivity {
 
                 return true;
             case R.id.go_to_folder:
-
+                Intent intent4 = new Intent(MainActivity.this, FoldersActivity.class);
+                startActivity(intent4);
                 return true;
             case R.id.settings:
 

@@ -35,7 +35,7 @@
     </string-array>
 
 
-    <string name="add_folder">Добавить папкн</string>
+    <string name="add_folder">Добавить папку</string>
     <string name="select_folders">Выбрать папки</string>
     <string name="delete_select_folders">Удалить выбранные папки</string>
     <string name="delete_empty_folders">Удалить пустые папки</string>
